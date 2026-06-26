@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo de Autenticación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Contenedor principal que organiza los formularios mediante Flexbox -->
+    <div class="contenedor-principal">
+    
+        <!-- Formulario de Registro -->
+        <div class="caja-formulario" id="seccion-registro">
+            <h2>Registro de Usuario</h2>
+
+            <!-- Formulario para registrar nuevos usuarios -->
+            <form id="form-registro">
+                
+                <!-- Campo: Nombre y apellido -->
+                <div class="grupo-input">
+                    <label>Nombre y Apellido</label>
+                    <input type="text" id="reg-nombre">
+
+                    <!-- Contenedor donde JavaScript mostrará el error -->
+                    <span class="error-msg" id="error-nombre"></span>
+                </div>
+
+                <!-- Campo: Email -->
+                <div class="grupo-input">
+                    <label>Email</label>
+                    <input type="text" id="reg-email">
+                    <span class="error-msg" id="error-email"></span>
+                </div>
+
+                <!-- Campo: Contraseña -->
+                <div class="grupo-input">
+                    <label>Contraseña</label>
+                    <input type="password" id="reg-password">
+                    <span class="error-msg" id="error-password"></span>
+                </div>
+
+                <!-- Campo: Confirmación de contraseña -->
+                <div class="grupo-input">
+                    <label>Confirmar Contraseña</label>
+                    <input type="password" id="reg-confirmacion">
+                    <span class="error-msg" id="error-confirmacion"></span>
+                </div>
+
+                <!-- Campo: Fecha de nacimiento -->
+                <div class="grupo-input">
+                    <label>Fecha de Nacimiento</label>
+                    <input type="date" id="reg-fecha">
+                    <span class="error-msg" id="error-fecha"></span>
+                </div>
+
+                <!-- Checkbox de aceptación de términos -->
+                <div class="grupo-input checkbox-grupo">
+                    <input type="checkbox" id="reg-terminos">
+                    <label>Acepto los términos y condiciones</label>
+                    <span class="error-msg" id="error-terminos"></span>
+                </div>
+
+                <!-- Botón que envía el formulario -->
+                <button type="submit" id="btn-registrar">Registrar</button>
+
+                <!-- Mensajes de estado (Cargando, Registro exitoso, etc.) -->
+                <div class="mensaje-estado" id="estado-registro"></div>
+
+            </form>
+        </div>
+
+       <!-- Formulario de Login -->
+        <div class="caja-formulario" id="seccion-login">
+            <h2>Iniciar Sesión</h2>
+
+            <!-- Formulario para iniciar sesión -->
+            <form id="form-login">
+                
+                <!-- Campo: Email -->
+                <div class="grupo-input">
+                    <label>Email</label>
+                    <input type="text" id="login-email">
+                    <span class="error-msg" id="error-login-email"></span>
+                </div>
+
+                <!-- Campo: Contraseña -->
+                <div class="grupo-input">
+                    <label>Contraseña</label>
+                    <input type="password" id="login-password">
+                    <span class="error-msg" id="error-login-password"></span>
+                </div>
+
+                <!-- Botón para iniciar sesión -->
+                <button type="submit" id="btn-ingresar">Ingresar</button>
+
+                <!-- Mensaje de estado del login -->
+                <div class="mensaje-estado" id="estado-login"></div>
+
+            </form>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

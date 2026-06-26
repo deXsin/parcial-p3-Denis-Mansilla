@@ -1,0 +1,126 @@
+/* Elimina márgenes y rellenos por defecto
+   de todos los elementos y define la fuente */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Estilos generales de la página */
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+/* Contenedor principal (Flexbox) */
+/* Organiza los formularios uno al lado del otro */
+.contenedor-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    padding: 20px;
+}
+
+
+/* Cajas que contienen cada formulario */
+.caja-formulario {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px; /* Evita que el formulario sea demasiado ancho */
+}
+
+/* Estilo del título de cada formulario */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Campos del formulario */
+/* Agrupa cada label, input y mensaje de error */
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Etiquetas de los campos */
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Estilo general de los campos de entrada */
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #555;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+
+/* Checkbox de términos y condiciones */
+/* Coloca el checkbox y el texto en una misma fila */
+.checkbox-grupo {
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Separación entre el checkbox y su etiqueta */
+.checkbox-grupo input {
+    margin-right: 10px;
+}
+
+/* Botones */
+/* Botones de Registrar e Ingresar */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4CAF50; /* Color verde para acciones principales */
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+/* Mensajes mostrados por JavaScript */
+/* Mensajes de error debajo de cada campo */
+.error-msg {
+    color: #ff4c4c;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+    min-height: 15px; /* Mantiene el espacio aunque no haya mensaje */
+}
+
+/* Mensajes de estado (Cargando, éxito, error, etc.) */
+.mensaje-estado {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    min-height: 20px;
+}
+
+/* Diseño Responsive */
+/* En pantallas pequeñas los formularios
+   se muestran uno debajo del otro */
+@media (max-width: 768px) {
+
+    .contenedor-principal {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .caja-formulario {
+        margin-bottom: 30px;
+    }
+}
