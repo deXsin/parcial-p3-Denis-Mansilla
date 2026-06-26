@@ -129,7 +129,7 @@ JSON.parse(localStorage.getItem("usuarios"));
     - Se guarda el array actualizado en `localStorage` utilizando `JSON.stringify()` y `localStorage.setItem()`.
 12. Finalmente, se muestra el mensaje de registro exitoso y se limpian los campos del formulario.
 
-![Diagrama de Flujo - Registro](./diagrama-registro.png)
+![Diagrama de Flujo - Registro](./diagrama-registro.jpg)
 
 ---
 
@@ -148,7 +148,7 @@ JSON.parse(localStorage.getItem("usuarios"));
 11. Si existe una coincidencia, se muestra el mensaje: “Acceso correcto. ¡Bienvenido!”.
 12. Si no existe coincidencia, se muestra el mensaje: “Credenciales incorrectas o usuario inexistente.”.
 
-![Diagrama de Flujo - Login](./diagrama-login.png)
+![Diagrama de Flujo - Login](./diagrama-login.jpg)
 
 ---
 
