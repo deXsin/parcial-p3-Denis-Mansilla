@@ -32,8 +32,6 @@ El proyecto implementa:
 
 ---
 
----
-
 ## Instrucciones para su ejecución
 
 El proyecto fue diseñado para ejecutarse directamente desde el navegador.
