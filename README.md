@@ -167,7 +167,7 @@ JSON.parse(localStorage.getItem("usuarios"));
 
 ---
 
-## ⚠️ Consideraciones
+## Consideraciones
 
 - El sistema funciona únicamente en el navegador.
 - No utiliza backend ni base de datos externa.
